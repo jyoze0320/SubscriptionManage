@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+
+<!-- 
+ @author 임다솜
+ 메인 pane
+ -->
+
+
+<Pane fx:id="appMain" prefHeight="720.0" prefWidth="1080.0" styleClass="appMain" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.AppMainController" />

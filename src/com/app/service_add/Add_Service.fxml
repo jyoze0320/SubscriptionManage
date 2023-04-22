@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+
+<AnchorPane id="backgroundColorWhite" fx:id="addService" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="810.0" styleClass="activeMenu" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.service_add.project_controller">
+   <children>
+      <Pane layoutX="76.0" layoutY="150.0" prefHeight="427.0" prefWidth="657.0">
+         <children>
+            <Label alignment="CENTER" layoutX="29.0" layoutY="-14.0" nodeOrientation="LEFT_TO_RIGHT" text="서비스명*">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="TOP" layoutX="29.0" layoutY="173.0" nodeOrientation="LEFT_TO_RIGHT" text="U   R   L  ">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="30.0" layoutY="25.0" nodeOrientation="LEFT_TO_RIGHT" text="카타고리*">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="27.0" layoutY="253.0" nodeOrientation="LEFT_TO_RIGHT" text="상세정보 ">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="31.0" layoutY="99.0" nodeOrientation="LEFT_TO_RIGHT" text="가      격*">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="29.0" layoutY="135.0" nodeOrientation="LEFT_TO_RIGHT" text="사용인원">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Service_Name" layoutX="139.0" layoutY="-17.0" prefHeight="33.0" prefWidth="484.0" />
+            <TextField fx:id="Tier" layoutX="138.0" layoutY="62.0" prefHeight="33.0" prefWidth="484.0" />
+            <TextField fx:id="Fee" layoutX="139.0" layoutY="100.0" prefHeight="33.0" prefWidth="484.0" />
+            <TextField fx:id="Num_People" layoutX="139.0" layoutY="137.0" prefHeight="33.0" prefWidth="484.0" />
+            <TextField fx:id="Service_URL" layoutX="139.0" layoutY="176.0" prefHeight="33.0" prefWidth="484.0" />
+            <TextArea fx:id="Service_Info" layoutX="27.0" layoutY="303.0" prefHeight="96.0" prefWidth="603.0" />
+            <Label alignment="CENTER" layoutX="29.0" layoutY="64.0" nodeOrientation="LEFT_TO_RIGHT" text="요금제명*">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="Category_ComboBox" layoutX="138.0" layoutY="23.0" prefHeight="33.0" prefWidth="484.0" promptText="선택">
+            </ComboBox>
+            <Button fx:id="Icon_URL" layoutX="146.0" layoutY="219.0" onAction="#handleIcon_URL" prefHeight="33.0" prefWidth="51.0">
+               <graphic>
+            					<ImageView>
+                     <image>
+                        <Image url="@../../../image/open.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label alignment="CENTER" layoutX="27.0" layoutY="216.0" nodeOrientation="LEFT_TO_RIGHT" text="ICON URL">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="67.0" layoutY="570.0" prefHeight="74.0" prefWidth="676.0" styleClass="addServiceButton">
+         <children>
+            <Button fx:id="Service_Commit" layoutX="215.0" layoutY="13.0" mnemonicParsing="false" onAction="#handleService_CommitAction" text="확 인" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="Service_Rollback" layoutX="370.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleService_RollbackAction" text="취 소" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Label alignment="CENTER" layoutX="166.0" layoutY="30.0" prefHeight="57.0" prefWidth="482.0" text="구독 서비스 추가">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

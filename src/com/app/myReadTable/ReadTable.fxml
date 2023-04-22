@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="810.0" styleClass="activeMenu" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.myReadTable.ReadTableController">
+   <children>
+      <Button fx:id="cancleBtn" alignment="CENTER" layoutX="355.0" layoutY="666.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="뒤로가기" textAlignment="CENTER" />
+      <Button fx:id="deleteBtn" layoutX="696.0" layoutY="108.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="삭제하기" textAlignment="CENTER" />
+      <TableView fx:id="readTable" fixedCellSize="10.0" layoutY="150.0" prefHeight="400.0" prefWidth="810.0" styleClass="tableView">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TableView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="166.0" layoutY="30.0" prefHeight="57.0" prefWidth="482.0" styleClass="title" text="나의 구독 서비스" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <HBox layoutX="510.0" layoutY="550.0" prefHeight="40.0" prefWidth="300.0">
+         <children>
+            <Label maxHeight="1.7976931348623157E308" prefHeight="40.0" prefWidth="100.0" text="총금액 : ">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalPay" maxHeight="1.7976931348623157E308" prefHeight="40.0" prefWidth="200.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

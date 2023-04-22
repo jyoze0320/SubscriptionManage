@@ -1,0 +1,31 @@
+*{
+   -fx-font-family : "Y 너만을 비춤체";
+}
+Button{
+   -fx-border-color : rgb(255, 255, 255);
+   -fx-background-color : #8c5a76;
+   -fx-text-fill : white;
+}
+Button:hover{
+   -fx-background-color : #a0738d;
+}
+
+.menu{
+   -fx-font-size : 26;
+}
+.addServiceButton{
+   -fx-font-size : 25;
+}
+
+TextField{
+-fx-border-color : black;
+
+}
+
+#backgroundColorWhite{
+   -fx-background-color : white;
+}
+
+#borderLineBlack{
+   -fx-border-color : black;
+}

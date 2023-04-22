@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="backgroundColorWhite" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="810.0" styleClass="activeMenu" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.service_info.myapp.TableViewController">
+	<children>
+		<Pane layoutY="94.0" prefHeight="93.0" prefWidth="810.0">
+			<children>
+				<Button fx:id="button1" layoutY="22.0" mnemonicParsing="false" onAction="#BTNall" prefHeight="50.0" prefWidth="162.0" text="ALL" />
+				<Button fx:id="button2" layoutX="162.0" layoutY="22.0" mnemonicParsing="false" onAction="#BTNmovie" prefHeight="50.0" prefWidth="162.0" text="Movie" />
+				<Button fx:id="button3" layoutX="324.0" layoutY="22.0" mnemonicParsing="false" onAction="#BTNmusic" prefHeight="50.0" prefWidth="162.0" text="Music" />
+				<Button fx:id="button4" layoutX="486.0" layoutY="22.0" mnemonicParsing="false" onAction="#BTNgame" prefHeight="50.0" prefWidth="162.0" text="Game" />
+      				<Button fx:id="button5" layoutX="648.0" layoutY="22.0" mnemonicParsing="false" onAction="#BTNcult" prefHeight="50.0" prefWidth="162.0" text="Book" />
+			</children>
+		</Pane>
+      <Button fx:id="cancleBtn" layoutX="380.0" layoutY="678.0" mnemonicParsing="false" text="뒤로가기" />
+		
+      
+      		<TableView fx:id="subtableview" layoutX="2.0" layoutY="204.0" prefHeight="466.0" prefWidth="810.0" styleClass="tableView">
+			<columns>
+           	    <TableColumn fx:id="service_name" prefWidth="100.0" text="서비스명" />
+				<TableColumn fx:id="fee_name" prefWidth="100.0" text="요금제명" />
+				<TableColumn fx:id="info" prefWidth="410.0" text="상세정보" />
+				<TableColumn fx:id="fee" minWidth="4.0" prefWidth="100.0" text="가격" />
+				<TableColumn fx:id="share" prefWidth="100.0" text="공유가능" />
+			</columns>
+		</TableView>
+				<Label alignment="CENTER" contentDisplay="CENTER" layoutX="166.0" layoutY="30.0" prefHeight="57.0" prefWidth="482.0" text="구독 서비스 보기">
+         <font>
+            <Font size="48.0" />
+         </font></Label>
+		<Button fx:id="addBtn" layoutX="712.0" layoutY="168.0" mnemonicParsing="false" text="추가하기" />
+	</children>
+	
+	
+</AnchorPane>
